@@ -1,3 +1,14 @@
-<pre>
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/cart"  routerLinkActive="active" ariaCurrentWhenActive="page">Cart</a>
+      |
+      <a routerLink="/products"  routerLinkActive="active" ariaCurrentWhenActive="page">Products</a>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
+
+<!-- <pre>
   {{products$ | async | json}}
-</pre>
+</pre> -->
