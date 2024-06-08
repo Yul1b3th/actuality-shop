@@ -1,13 +1,5 @@
 @if(products$ | async; as products){
-  @for (product of products; track product.id) {
-    <div>
-      <div>
-        <img src="https://dummyimage.com/720x400" alt="">
-        <div>
-          <h2>Category</h2>
-          <a [routerLink]="['/product-details', 452]">Product Title</a>
-        </div>
-      </div>
-    </div>
+  @for (item of products; track item.id) {
+    <app-card [product]="item"/>
   }
 }

@@ -9,6 +9,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './details.component.scss'
 })
 export class DetailsComponent {
-  @Input('id') productID!: string;
+  @Input({ alias: 'id' }) productID!: string;
 
 }
