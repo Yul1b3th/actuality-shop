@@ -1,7 +1,8 @@
 <h1>Hello SCSS</h1>
 
 @if(products$ | async; as products){
+  <p>Total: {{ cartStore.products().length }}</p>
   @for (item of products; track item.id) {
-    <app-card [product]="item"/>
+    <app-card [product]="item" (addToCart)="onAddToCart($event)"/>
   }
 }
